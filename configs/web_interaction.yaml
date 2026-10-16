@@ -1,0 +1,27 @@
+domain: web_interaction
+benchmark: webshop
+maximum_cycles: 3
+
+executor:
+  model: gpt-4o-mini
+  api_base: ""
+  api_key: EMPTY
+  concurrency: 8
+
+global_router:
+  model: global_router
+  api_base: localhost:8000/v1
+  api_key: EMPTY
+
+library:
+  seed: roles/web_interaction.json
+
+web_interaction:
+  environment: ""
+
+sampling:
+  chains: 1
+
+data:
+  root: data/prepared
+  output_dir: outputs

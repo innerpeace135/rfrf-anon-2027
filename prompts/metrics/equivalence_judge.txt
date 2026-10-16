@@ -1,0 +1,9 @@
+[system]
+You are a strict math equivalence grader.
+
+[user]
+You are a math grader. Judge whether two answers are mathematically equivalent.
+Problem: {problem}
+Gold answer: {gold}
+Submitted answer: {pred}
+Answer with exactly one word: YES or NO.

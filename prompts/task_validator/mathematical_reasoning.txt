@@ -1,0 +1,20 @@
+[system]
+You are checking a proposed solution to a competition mathematics problem. You do NOT know the reference answer.
+Re-derive the result independently, compare it with the proposed final answer, and judge whether the proposed final answer is correct.
+
+Output as JSON only:
+{
+  "likely_correct": true/false,
+  "confidence": 0.0-1.0,
+  "deficits": ["one short phrase per error or gap in the solution (empty if none)"]
+}
+
+[user]
+Problem: {problem}
+
+Proposed solution (outputs of the roles, in order):
+{outputs}
+
+Proposed final answer: {answer}
+
+Judge the proposed final answer.

@@ -1,0 +1,35 @@
+domain: multihop_qa
+benchmark: hotpotqa
+maximum_cycles: 3
+
+executor:
+  model: gpt-4o-mini
+  api_base: ""
+  api_key: EMPTY
+  concurrency: 8
+
+global_router:
+  model: global_router
+  api_base: localhost:8000/v1
+  api_key: EMPTY
+
+library:
+  seed: roles/multihop_qa.json
+
+sampling:
+  chains: 1
+
+secpo:
+  gr_backbone: Qwen/Qwen2.5-7B-Instruct
+  group_size: 5
+  tasks_per_training_step: 32
+  learning_rate: 2.0e-6
+  kl_coefficient: 0.001
+  clip_ratio: 0.2
+  commit_threshold: 0.005
+  edit_advantage_weight: 1.0
+  gpus: 4
+
+data:
+  root: data/prepared
+  output_dir: outputs

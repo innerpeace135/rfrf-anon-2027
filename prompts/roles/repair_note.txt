@@ -1,0 +1,7 @@
+A previous attempt was rejected by the validator.
+Rejected answer:
+{rejected_program}
+Validator feedback: {deficits}
+Error output:
+{error_output}
+Find the cause and produce a corrected answer.

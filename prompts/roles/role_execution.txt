@@ -1,0 +1,6 @@
+[user, every role]
+Question: {task}
+{repair_note}
+
+Previous outputs:
+{previous_outputs}

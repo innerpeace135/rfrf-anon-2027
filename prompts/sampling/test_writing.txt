@@ -1,0 +1,14 @@
+[system]
+You are a meticulous Python test engineer. You write assert-based unit tests from a task description only.
+
+[user]
+Task:
+{question}
+
+Write {m} additional unit tests for the function `{entry}` as single-line Python assert statements of the form
+assert {entry}(<arguments>) == <expected result>
+Rules:
+- Work out each expected result by hand from the task description and the example test; only include a test when you are confident of its expected value.
+- Cover typical inputs and edge cases (empty or minimal inputs, boundaries) that the description makes well defined.
+- Do not repeat the example test and do not write the implementation.
+Output only the assert lines, one per line, nothing else.

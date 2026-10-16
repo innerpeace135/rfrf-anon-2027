@@ -1,0 +1,10 @@
+[user]
+You are the answer selector of a multi-role math solving system. Several chains proposed the candidate final answers below for this problem; pick the one that is correct.
+
+Problem:
+{problem}
+
+Candidate final answers:
+{candidates}
+
+Reply with the chosen candidate in \boxed{}.
